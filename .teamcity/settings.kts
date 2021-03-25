@@ -18,7 +18,54 @@ project {
     }
 
     vcsRoot(VCSExample)
+
+    features {
+        dockerRegistry {
+            id = ""
+            name = ""
+            url = ""
+            userName = ""
+            password = ""
+        }
+    }
+
 }
+
+object DockerBuild : BuildType({
+    name = "docker build"
+
+    vcs {
+        root(VCSExample)
+    }
+
+    steps {
+        dockerCommand {
+            name = "build"
+            commandType = build {
+                source = file {
+                    path = "."
+                }
+                namesAndTags = "freefox-do/filepizza:latest"
+                commandArgs = "--pull"
+            }
+        }
+        dockerCommand {
+            name = "push"
+            commandType = push {
+                namesAndTags = "freefox-do/filepizza:latest"
+            }
+        }
+    }
+
+    features {
+        dockerSupport {
+            cleanupPushedImages = true
+            loginToRegistry = on {
+                dockerRegistryId = ""
+            }
+        }
+    }
+})
 
 
 object VCSExample : GitVcsRoot({
