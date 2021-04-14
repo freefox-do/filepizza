@@ -21,7 +21,7 @@ project {
 
 }
 
-object DockerBuildsteve : D({
+object DockerBuildsteve : DockerBuild({
     name = "docker build"
 
     vcs {
