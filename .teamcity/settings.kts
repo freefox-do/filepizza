@@ -33,7 +33,7 @@ object DockerBuildsteve : DockerBuild({
     imageName = "filepizza"
     tag = "v1.0.4"
     artusername = "admin"
-    artpassword = "credentialsJSON:zxxcf5ffd60eb9a16d09a3261ccbb83268a"
+    artpassword = "credentialsJSON:4365953f-8420-45b5-bebe-924c1243cd0a"
 
 })
 
