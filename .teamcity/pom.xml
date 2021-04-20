@@ -29,7 +29,7 @@
     </repository>
     <repository>
       <id>jfrog-server</id>
-      <url>https://freefox1.jfrog.io/artifactory/kotlin</url>
+      <url>http://13.239.84.133:8082/artifactory/kotlin-module/</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -117,7 +117,7 @@
     <dependency>
       <groupId>docker-build-publish</groupId>
       <artifactId>docker-build-publish_dsl</artifactId>
-      <version>1.1-SNAPSHOT</version>
+      <version>1.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
