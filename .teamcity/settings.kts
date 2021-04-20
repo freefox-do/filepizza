@@ -29,12 +29,11 @@ object DockerBuildsteve : BuildType({
     }
 
 
-    repository = "capnash1.jfrog.io"
-	imageName = "filepizza"
+    repository = "13.239.84.133:8082"
+    imageName = "filepizza"
     tag = "v1.0.4"
-	artusername = "stevenash4321@outlook.com"
-	artpassword = "credentialsJSON:zxxcf5ffd60eb9a16d09a3261ccbb83268a"
-
+    artusername = "admin"
+    artpassword = "credentialsJSON:zxxcf5ffd60eb9a16d09a3261ccbb83268a"
 
 })
 
