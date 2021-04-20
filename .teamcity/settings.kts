@@ -41,7 +41,7 @@ object DockerBuildsteve : DockerBuild({
 object VCSExample : GitVcsRoot({
     name = "VCSExample"
     url = "https://github.com/freefox-do/filepizza.git"
-    branch = "refs/heads/main"
+    branch = "refs/heads/master"
     authMethod = password {
         userName = "capnash"
         password = "d5bbe75793d3b650338fee279857bb1e90e8ea28"
